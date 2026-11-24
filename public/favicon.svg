@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9D976"/>
+      <stop offset="45%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#9E7C16"/>
+    </linearGradient>
+    <radialGradient id="bgGlow" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#1c1c1c"/>
+      <stop offset="100%" stop-color="#0a0a0a"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Fondo redondeado -->
+  <rect x="0" y="0" width="200" height="200" rx="44" fill="url(#bgGlow)"/>
+  <rect x="3" y="3" width="194" height="194" rx="41" fill="none" stroke="url(#gold)" stroke-width="2" opacity="0.5"/>
+
+  <!-- Volante integrado detrás de la W -->
+  <g transform="translate(100,104)">
+    <!-- aro exterior -->
+    <circle cx="0" cy="0" r="52" fill="none" stroke="url(#gold)" stroke-width="7"/>
+    <!-- cubo central -->
+    <circle cx="0" cy="0" r="11" fill="url(#gold)"/>
+    <!-- radios del volante (izq, der, abajo) -->
+    <rect x="-46" y="-4.5" width="35" height="9" rx="4.5" fill="url(#gold)"/>
+    <rect x="11" y="-4.5" width="35" height="9" rx="4.5" fill="url(#gold)"/>
+    <rect x="-4.5" y="11" width="9" height="38" rx="4.5" fill="url(#gold)"/>
+  </g>
+
+  <!-- La "W" en primer plano, arriba del volante -->
+  <path d="M 56 60
+           L 72 60
+           L 84 104
+           L 100 68
+           L 116 104
+           L 128 60
+           L 144 60
+           L 124 134
+           L 108 134
+           L 100 104
+           L 92 134
+           L 76 134
+           Z"
+        fill="url(#gold)" stroke="#0a0a0a" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>
